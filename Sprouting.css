@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    height: auto;
+    width: 1515px;
+    margin-left: -10px;
+    background-color: #7AC943;
+    
+
+}
+.homepage:hover{
+  transform: scale(1.1);
+}
+.navbar a{
+    text-decoration: none;
+    color:  black;
+    font-size: 20px;
+    font-family: 'serif','garamond';
+    font-weight: 1000;
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    
+    padding: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #7AC943;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.dropdown-content li {
+    border-bottom: 1px solid black;
+}
+
+.dropdown-content li a {
+    color: black;
+    font-family: 'serif','garamond';
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content li a:hover {
+    background-color:  #7AC943;
+    transform: scale(1.1);
+    
+}
+.dropdown-checkbox:checked + .dropbtn + .dropdown-content {
+    display: block;
+}
+
+.intro{
+    height: auto;
+    margin-top: 100px;
+}
+.intro h2{
+    color: #7AC943;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'serif','Garamond';
+}
+.intro p{
+    margin-left: 300px;
+    color: rgb(226, 238, 222);
+    font-size: 20px;
+    text-align: center;
+    width: 900px;
+    font-family: 'monospace','Monaco';
+}
+
+@media (max-width: 1000px) {
+    .intro p {
+        margin-left: 20px;
+        width: 90%;
+        font-size: 20px;
+        font-family: 'monospace','Monaco';
+    }
+    .intro h2 {
+        font-size: 25px;
+        padding: 10px;
+        font-family: 'serif','Garamond';
+    }
+}
+.sprout{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+}
+.sprout-img{
+    margin-left: 150px;
+}
+.sprout-img img{
+    height: 325px;
+    width: 325px;
+    margin-top: 50px;
+}
+.sprout-txt{
+    margin-top: 40px;
+}
+.sprout-txt p{
+    color: rgb(226, 238, 222);
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    line-height: 25px;
+    width: 700px;
+    font-family: 'monospace','Monaco';
+}
+
+@media (max-width: 1000px) {
+    .sprout {
+        display: block;
+        border-width: 1px;
+    }
+    .sprout-img {
+        margin-left: 20px;
+        text-align: center;
+    }
+    .sprout-img img {
+        width: 90vw;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .sprout-txt {
+        margin-top: 20px;
+        border-width: 1px;
+    }
+    .sprout-txt p {
+        width: 90vw;
+        max-width: 95%;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 15px;
+        border-width: 1px;
+        font-family: 'monospace','Monaco';
+    }
+}
+.sprting{
+    height: auto;
+}
+.sprting  h2{
+    color: #7AC943;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 70px;
+    font-family: 'serif','Garamond';
+}
+.sprting p{
+    color: rgb(226, 238, 222);
+    font-size: 20px;
+    text-align: left;
+    height: auto;
+    width: 1200px;
+    margin-left: 150px;
+    font-family: 'monospace','Monaco';
+}
+.sprting ol{
+    color: rgb(226, 238, 222);
+    font-family: 'monospace','Monaco';
+    margin-left: 150px;
+}
+.sprting iframe{
+    margin-left: 450px;
+}
+.sprting img{
+    width: 900px;
+    height: 600px;
+    margin-left: 300px;
+}
+
+@media (max-width: 1000px) {
+    .sprting h2 {
+        font-size: 28px;
+        margin-left: 20px;
+        margin-top: 30px;
+        padding: 10px;
+        font-family: 'serif','Garamond';
+    }
+    .sprting p {
+        font-size: 20px;
+        width: 90vw;
+        max-width: 95%;
+        margin-left: 10px;
+        font-family: 'monospace','Monaco';
+    }
+    .sprting ol {
+        margin-left: 20px;
+    }
+    .sprting iframe {
+        margin-left: 0;
+        width: 90vw;
+        max-width: 95%;
+        display: block;
+    }
+    .sprting img {
+        width: 90vw;
+        max-width: 95%;
+        height: auto;
+        margin-left: 10px;
+    }
+}
