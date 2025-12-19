@@ -1,0 +1,254 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    height: auto;
+    width: 1515px;
+    margin-left: -10px;
+    background-color: #7AC943;
+    
+
+}
+.homepage:hover{
+  transform: scale(1.1);
+}
+.navbar a{
+    text-decoration: none;
+    color:  black;
+    font-size: 20px;
+    font-family: 'serif','garamond';
+    font-weight: 1000;
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    
+    padding: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #7AC943;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.dropdown-content li {
+    border-bottom: 1px solid black;
+}
+
+.dropdown-content li a {
+    color: black;
+    font-family: 'serif','garamond';
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content li a:hover {
+    background-color:  #7AC943;
+    transform: scale(1.1);
+    
+}
+.dropdown-checkbox:checked + .dropbtn + .dropdown-content {
+    display: block;
+}
+
+.introtxt{
+    margin-top: 100px;
+    width: auto;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+}
+.introtxt h1{
+    font-family: serif;
+    letter-spacing: 0px;
+    font-size: 50px;
+    height: 80px;
+    color: #7AC943;
+}
+.introtxt h3{
+    font-family: 'serif','Garamond';
+    font-size: 25px;
+    color: #7AC943;
+    height: 40px;
+}
+.introtxt p{
+    font-family: 'monospace','Monaco';
+    font-size: 20px;
+    width:600px;
+    color: rgb(226, 238, 222);
+    
+}
+@media (max-width: 800px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .introtxt {
+        margin-top: 100px;
+        margin-left: 0;
+        width: 90vw;
+        height: auto;
+    }
+    .introtxt h1 {
+        font-size: 32px;
+        height: auto;
+    }
+    .introtxt h2 {
+        font-family: 'serif','Garamond';
+        font-size: 18px;
+        height: auto;
+        color: #7AC943;
+    }
+    .introtxt p {
+        font-family: 'monospace','Monaco';
+        font-size: 20px;
+        color: rgb(226, 238, 222);
+    }
+}
+
+.con{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.msg{
+    height: 200px;
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.msg h2{
+    font-family: serif;
+    letter-spacing: 0px;
+    font-size: 50px;
+    margin-top: 15px;
+    height: 80px;
+    color: #7AC943;
+}
+.msg p{
+    font-family: 'monospace','Monaco';
+    font-size: 20px;
+    color: rgb(226, 238, 222);
+    margin-left: 50px;
+}
+.form{
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.form label{
+    font-family: serif;
+    letter-spacing: 0px;
+    font-size: 20px;
+    margin-top: 15px;
+    height: 80px;
+    color: #7AC943;
+}
+.form p{
+    font-family: 'monospace','Monaco';
+    font-size: 20px;
+    color: #7AC943;
+}
+
+@media (max-width: 800px) {
+    .con {
+        flex-direction: column;
+        align-items: center;
+    }
+    .msg {
+        width: 90vw;
+        margin-left: 0;
+        margin-top: 40px;
+        height: auto;
+    }
+    .msg h2 {
+        font-size: 32px;
+        height: auto;
+    }
+    .msg p {
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .form {
+        margin-left: 0;
+        padding: 10px;
+        width: 90vw;
+    }
+    .form label {
+        font-size: 16px;
+        height: auto;
+    }
+    .form p {
+        font-size: 16px;
+    }
+}
+.intro{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.intro h1{
+    font-family: serif;
+    letter-spacing: 0px;
+    font-size: 50px;
+    margin-top: 15px;
+    height: 80px;
+    color: #7AC943;
+}
+.intro h2{
+    font-family: 'serif','Garamond';
+    font-size: 25px;
+    color: #7AC943;
+    height: 40px;
+}
+.intro p{
+    font-family: 'monospace','Monaco';
+    font-size: 20px;
+    color: rgb(226, 238, 222);
+}
+
+@media (max-width: 800px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 0;
+        width: 90vw;
+    }
+    .intro h1 {
+        font-size: 32px;
+        height: auto;
+    }
+    .intro h2 {
+        font-size: 18px;
+        height: auto;
+    }
+    .intro p {
+        font-size: 16px;
+    }
+}
